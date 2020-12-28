@@ -51,4 +51,4 @@ while 1:
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/pages/music.html','w') as f:
 		f.write(htmlfile)
 
-	time.sleep(50)
+	time.sleep(350)
