@@ -20,9 +20,7 @@ while 1:
 	
 	os.system("git commit -a -m 'Auto Summary'")
 	os.system("git push origin 'main'")
-
-	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/changes.txt','w') as f:
-		f.write(str(k))
+	print(k)
 
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/static/docs/bookmark.dtb') as f:
 		links = f.readlines()
