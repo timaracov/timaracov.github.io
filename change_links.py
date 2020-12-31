@@ -25,12 +25,12 @@ while 1:
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/static/docs/bookmark.dtb') as f:
 		links = f.readlines()
 
-	for link in links:
-		link = link.split('<----->')
-		sublink = link[0].split(' ')
+	for i in range(len(links)):
+		links[i] = links[i].split('<----->')
+		sublink = links[i][0].split(' ')
 		if len(sublink)>9:
-			link[0] = sublink[:len(sublink)//2]
-			print(link[0])
+			links[i][0] = sublink[:len(sublink)//2]
+			print(links[i])
 		htmllines.append("\t\t\t<p> <a href={}> {} </a> </p>\n".format(link[1],link[0]))
 
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/pages/bmrk.html','r') as f:
