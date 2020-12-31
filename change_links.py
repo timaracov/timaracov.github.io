@@ -31,7 +31,7 @@ while 1:
 		if len(sublink)>9:
 			links[i][0] = sublink[:len(sublink)//2]
 			print(links[i])
-		htmllines.append("\t\t\t<p> <a href={}> {} </a> </p>\n".format(link[1],link[0]))
+		htmllines.append("\t\t\t<p> <a href={}> {} </a> </p>\n".format(links[i][1],links[i][0]))
 
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/pages/bmrk.html','r') as f:
 		htmlfile = f.read()
