@@ -30,7 +30,6 @@ while 1:
 		sublink = links[i][0].split(' ')
 		if len(sublink)>9:
 			links[i][0] = ' '.join(sublink[:len(sublink)//2])
-			print(links[i][0])
 		htmllines.append("\t\t\t<p> <a href={}> {} </a> </p>\n".format(links[i][1],links[i][0]))
 
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/pages/bmrk.html','r') as f:
