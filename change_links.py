@@ -28,6 +28,7 @@ while 1:
 	for link in links:
 		link = link.split('<----->')
 		sublink = link[0].split(' ')
+		print(sublink)
 		if len(sublink)>9:
 			link[0] = sublink[:len(sublink)//2]
 		htmllines.append("\t\t\t<p> <a href={}> {} </a> </p>\n".format(link[1],link[0]))
