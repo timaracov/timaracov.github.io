@@ -1,5 +1,4 @@
-from bs4 import BeautifulSoup as Bs
-import os, re, requests, time
+import os, time
 
 def re_html(html,oldtag,newtag):
 	oldtags = oldtag.split('...')
@@ -44,7 +43,7 @@ while 1:
 	music_files = os.listdir('/home/tima/Документы/GitHub/newrep/timaracov.github.io/static/music/')
 
 	for i in range(len(music_files)):
-		music_files[i] = f'\t\t\t<p><a href="/static/music/{music_files[i]}">{music_files[i]}</a></p>\n'
+		music_files[i] = f'\t\t\t<p><a href="timaracov.github.io/static/music/{music_files[i]}">{music_files[i]}</a></p>\n'
 
 	with open('/home/tima/Документы/GitHub/newrep/timaracov.github.io/pages/music.html','r') as f:
 		htmlfile = f.read()
