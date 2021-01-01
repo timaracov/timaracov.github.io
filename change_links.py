@@ -17,7 +17,7 @@ while 1:
 	htmllines = []
 	k+=1
 	
-	os.system("git commit -a -m 'Auto Summary'")
+	os.system("git commit  --allow-empty -a -m 'Auto Summary'")
 	os.system("git push origin 'main'")
 	print(k)
 
