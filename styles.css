@@ -1,5 +1,6 @@
 .docs {
 	display: table;
+	background-color: black;
 }
 .docs h2 a {
 	display: table-cell;
