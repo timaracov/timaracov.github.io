@@ -1,0 +1,6 @@
+.docs {
+	display: table;
+}
+.docs h2 a {
+	display: table-cell;
+}
