@@ -1,7 +1,8 @@
 .docs {
 	display: table;
-	background-color: black;
+	background-color: #abcdf2;
 }
 .docs h2 a {
 	display: table-cell;
+	font-size: 32px;
 }
