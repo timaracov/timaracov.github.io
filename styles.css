@@ -3,6 +3,6 @@
 	background-color: #abcdf2;
 }
 .docs h2 a {
-	display: table-cell;
+	display: inline-block;
 	font-size: 32px;
 }
